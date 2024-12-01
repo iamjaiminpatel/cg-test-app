@@ -19,8 +19,10 @@ npm run build
 ```
 npm run lint
 ```
-### Update confir files
+### Update config files
+```
 Add your APP and API url
+```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
