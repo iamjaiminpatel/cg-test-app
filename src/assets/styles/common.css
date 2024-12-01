@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Form Container */
+.container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-header img {
+  width: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.form-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form-header p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.form-header a {
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-header a:hover {
+  text-decoration: underline;
+}
+
+/* Flexbox Form Fields */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-group {
+  flex: 1 1 calc(50% - 1rem); /* Flex for 2-column layout */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.form-control {
+  font-size: 0.9rem;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Password Visibility Icon */
+.form-control-icon {
+  position: relative;
+}
+
+.form-control-icon input {
+  padding-right: 40px;
+}
+
+.form-control-icon i {
+  position: absolute;
+  top: 72%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa;
+  font-size: 1.2rem;
+}
+
+/* Register Button */
+.btn-primary {
+  background-color: #ff6f61;
+  border-color: #ff6f61;
+  font-weight: 600;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  width: 20%;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #e0554b;
+  border-color: #e0554b;
+}
+
+/* Centering the button */
+.form-field-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.error {
+  color: red;
+  font-weight: bolder;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .form-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .form-header p {
+    font-size: 0.85rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  .form-label {
+    font-size: 0.85rem;
+  }
+
+  .form-control {
+    font-size: 0.85rem;
+  }
+
+  .form-control-icon input {
+    height: 40px;
+  }
+
+  .btn-primary {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  /* Stack form fields on small screens */
+  .form-row .form-group {
+    flex: 1 1 100%; /* Stack fields on smaller screens */
+  }
+}
